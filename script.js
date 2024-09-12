@@ -12,11 +12,12 @@ function changeSlide(offset) {
 
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
+    
 }
 
-// function startAutoSlide() {
-//     intervalId = setInterval(() => changeSlide(1), 5000); // Change slide every 5 seconds
-// }
+function startAutoSlide() {
+    intervalId = setInterval(() => changeSlide(1), 10000); // Change slide every 5 seconds
+}
 
 function stopAutoSlide() {
     clearInterval(intervalId);
@@ -31,4 +32,5 @@ buttons.forEach(button => {
     });
 });
 
-startAutoSlide(); // Start the automatic sliding when the page loads
+startAutoSlide(); 
+// Start the automatic sliding when the page loads
