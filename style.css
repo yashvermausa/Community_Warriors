@@ -10,8 +10,9 @@
 
 
 
+
 .nav-bar{
-    background-color: rgb(238, 234, 234);
+    background-color: #dbd4d4;
     grid-column: 1/13;
     width: 100%;
     display: flex;
@@ -99,7 +100,7 @@
 .carousel-1{
     background-color: grey;
     grid-column: 1/13;
-    border: black solid 1px;
+    border: black solid 2px;
 }
 
 
@@ -110,7 +111,40 @@
 }
 
 .footer{
-    color: red;
+    color: rgb(212, 204, 204);
+    grid-column: 1/13;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    
+}
+
+.footer-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer h4{
+    font-size: 30px;
+    font-family: 'Hangyaboly';
+}
+
+.footer p{
+
+    font-size: 20px;
+}
+
+.social-media-footers{
+    margin-left: auto;
+    margin-right: 1.25%;
+}
+
+
+
+#right{
+    font-size: 1vw
 }
 
 .slides {
@@ -144,6 +178,41 @@
     
 }
 
+.two {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://assets.zyrosite.com/d95gpONX61tqnKJX/2023-07-02-mePnLJ8V11Hk3DRa.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: 1;
+}
+
+.two h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    font-family: 'Hangyaboly', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
 .one h2{
     font-size: 4.6vw;
     font-family: 'Hangyaboly', sans-serif;
@@ -167,6 +236,12 @@
 
 }
 
+.images img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -188,31 +263,51 @@
     right: 10px;
 }
 
+.monthly-newsletter{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 2%;
+    text-align: center;
+   
+}
+
+.monthly-newsletter button{
+    height: 75px;
+    width: 300px;
+
+}
+
 .chart{
     background-color: white;
     grid-column: 1/13;
+    display: flex;
+    margin-top: 4vh;
+    padding: 5rem;
+    gap: 50px;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .1fr 1fr 1fr;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    place-items: center;
+    place-items: center; */
 
-    margin-top: 2rem;
+    /* margin-top: 2rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
 }
-.chart h2{
+/* .chart h2{
     grid-column: 1/3;
     text-align: center;
-    font-family: 'Hangyaboly';
-    font-size: 5vw;
+    font-family: 'Poppins';
+    font-size: 4vw;
     
-}
+} */
 
-.chart div{
+/* .chart div{
     height: 80%;
     width: 70%;
     align-self: center;
@@ -226,9 +321,9 @@
     gap: 20%;
     
 
-}
+} */
 
-.chart p{
+/* .chart p{
     font-size: 2.75vh;
     width: 100%;
     text-align: center;
@@ -238,8 +333,56 @@
     font-size: 4vh;
     width: 100%;
     text-align: center;
+} */
+
+.chart-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    font-family: "Montserrat";
+
+    
 }
 
+
+
+.chart-info h3{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(156, 141, 119);
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    line-height: 50px;
+}
+.chart-info h3:after{
+    content: "";
+    position: absolute;
+    background-color: #aebfd6;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+.chart-info h3:hover{
+    color: rgb(156, 141, 119);
+
+}
+.chart-info h3:nth-of-type(1):hover:after{
+    width: 100%;
+}
+.chart-info h3:nth-of-type(2):hover:after{
+    width: 60%;
+}
+
+
+
+.chart-buttons .volunteers:hover{
+    text-decoration: underline;
+}
 
 
 .our-mission{
@@ -250,20 +393,52 @@
     margin-right: 10%;
 }
 
-.chart img{
-    object-fit: cover;
-    height: auto;
-    width: 33%;
-    margin: 0px 7%;
-}
 
 .georgia-map{
-    margin-top: 59000%;
+    margin-top: 
 }
 
-.chart img:nth-child(2){
+.chart img{
+    height: auto;
+    object-fit: cover;
+    width: 50%;
 
 }
+
+.contact-us-info p {
+    font-size: 2vw;
+    font-family: 'Poppins';
+    
+}
+
+.contact-us-info{
+}
+
+
+textarea{
+    height: 150px;
+    width: 250px;
+}
+
+.contact-us-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-us h2{
+    font-size: 6vw;
+    text-align: center;
+}
+
+.contact-us p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
 
 @media (min-width: 1025px) and (max-width: 1249px) {
     .container-1{
@@ -282,7 +457,7 @@
     .container-1{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1.5fr 7fr 10fr 3fr 2fr;
+        grid-template-rows: .5fr 4fr 6fr 600px 2fr;
     }
 
     /* nav bar codes */
@@ -308,12 +483,14 @@
     }
 
     .one h2{
-        font-size: 5.3vw;
+        font-size: 4;
     }
     .one img{
         object-fit: cover;
         height: auto;
-        width: 45%;
+        width: 50%;
+        object-fit: cover;
+
      }
 
      /* slide code */
@@ -322,15 +499,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15%;
+        gap: 10%;
         padding: 85px 85px;
     }
 
     .slide.two{
-        background-color: white;
         display: flex;
         padding: 40px;
-        background-color: rgb(229, 238, 245);
+        background-color: #f2f7f8;
         
 
 
@@ -340,12 +516,36 @@
         height: auto;
         width: 75%;
         border-radius: 10%;
-        border: black solid 5px;
+        object-fit: cover;
+
+
     }
 
      
-    .chart{
-        margin-top: 4rem;
+    .three{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        justify-content: center;
+        
+    }
+
+    .monthly-newsletter{
+        width: 40%;
+        margin-right: 10%;
+    }
+
+    .info-3{
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .three img{
+        
+        height: auto;
+        object-fit: cover;
     }
     
 
@@ -370,7 +570,7 @@
     
 }
 
-}
+
 /* large screeen */
 @media (min-width: 1750px) {  
 
@@ -378,8 +578,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 3fr 5fr 4fr 1fr;
-    
     }
+    
 
     .slide.one{
         justify-content: center;
@@ -404,4 +604,5 @@
     /* Carousel CSS */
    
     
+
 }
