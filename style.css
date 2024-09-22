@@ -23,6 +23,8 @@
     position: sticky;
     top: 0;
     z-index: 5;
+    box-shadow: 10px 10px 20px rgb(226, 222, 222);
+
     
     
 }
@@ -547,6 +549,10 @@ textarea{
         height: auto;
         object-fit: cover;
     }
+
+    .contact-us{
+        padding: 60px;
+    }
     
 
     
@@ -577,29 +583,65 @@ textarea{
     .container-1{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 3fr 5fr 4fr 1fr;
+    grid-template-rows: 125px 3fr 5fr 4fr 1fr;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .links{
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+        font-family: 'Poppins';
+        
+    }
+
+    .external-links button{
+        background-color: #00BF63; ; font-weight: 500; font-size: 1rem;
+        color: white;
+        padding: 10px;
+    }
+
+    .fa-brands{
+        font-size: 2rem;
+        
     }
     
 
     .slide.one{
         justify-content: center;
         align-items: center;
-        gap: 23%;
+        gap: 20%;
         padding: 200px;
     }
 
     .one p{
         position: absolute;
-        top: 5vh;
     }
 
-    .links{
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: black;
-        font-family: 'Poppins';
-        
+    .chart-info h2{
+        font-size: 3rem;
     }
+
+    .chart p{
+        font-size: 2rem;
+    }
+
+    .chart-buttons{
+        font-size: 2rem;
+    }
+
+    .contact-us{
+        padding: 120px;
+    }
+
+    .contact-us-info{
+        margin-top: 5%;
+    }
+
+    
     
     /* Carousel CSS */
    
