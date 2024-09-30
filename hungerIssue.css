@@ -122,37 +122,8 @@
     font-size: 1vw
 }
 
-.intro{
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    gap: 3px;
-}
-
-.intro h3{
-    font-size: 2rem;
-}
-
-.main{
-    padding: 5%;
-    background-color: #B6A896;
-    color: whitesmoke;
-}
-
-
-
-
-
-  
-
-
-
-
 @media (min-width: 1200px) and (max-width: 1749px) {
-    .container-2{
+    .container-4{
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -195,7 +166,7 @@
 
 @media (min-width: 1750px) { 
 
-    .container-2{
+    .container-4{
     height: 1700px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -208,7 +179,7 @@
 
     .links{
         text-decoration: none;
-        font-size: 0.65rem;
+        font-size: 1rem;
         color: black;
         font-family: 'Poppins';
         
@@ -227,6 +198,3 @@
 
     
 }
-
-
-

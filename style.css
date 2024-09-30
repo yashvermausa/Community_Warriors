@@ -469,7 +469,7 @@ textarea{
 
     .links{
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.65rem;
         color: black;
         font-family: 'Poppins';
         
@@ -640,6 +640,8 @@ textarea{
     .contact-us-info{
         margin-top: 5%;
     }
+
+   
 
     
     
