@@ -33,4 +33,19 @@ buttons.forEach(button => {
 });
 
 startAutoSlide(); 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    hamburgerMenu.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+
+        // Toggle hamburger icon animation (optional)
+        hamburgerMenu.classList.toggle('open');
+    });
+});
+
 // Start the automatic sliding when the page loads

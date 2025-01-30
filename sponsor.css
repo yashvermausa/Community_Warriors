@@ -164,6 +164,14 @@
     
 }
 
+.sponsors-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/13;
+
+}
+
 @media (min-width: 1750px) { 
 
     .container-3{

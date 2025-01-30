@@ -650,3 +650,132 @@ textarea{
     
 
 }
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 50%; /* Adjust logo size */
+        margin-left: 0; /* Remove unnecessary margin */
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.8rem; /* Adjust spacing */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .links {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .external-links {
+        flex-direction: row;
+        gap: 0.5rem; /* Adjust spacing */
+        margin-right: 0;
+    }
+
+    .carousel-1, .contact-us, .chart {
+        padding: 2rem; /* Reduce padding */
+        border: none; /* Remove borders */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .footer-information {
+        gap: 1rem; /* Adjust gap */
+    }
+
+    .chart-info {
+        gap: 1rem; /* Adjust gap */
+    }
+
+    .contact-us-info p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .monthly-newsletter {
+        width: 90%; /* Make it take more space */
+        margin: 0 auto; /* Center it */
+    }
+
+    .contact-us h2 {
+        font-size: 4vw; /* Adjust font size */
+    }
+
+    .contact-us p {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    .textarea {
+        width: 100%; /* Full width for better layout */
+        height: 100px; /* Adjust height */
+    }
+
+    .chart img {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .footer h4 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .footer p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Adjust carousel buttons */
+    .carousel-button {
+        font-size: 1.5rem; /* Smaller buttons */
+        padding: 0.5rem;
+    }
+
+    /* Adjust the slide image size */
+    .slide img {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Make the h2 in slides smaller */
+    .two h2 {
+        font-size: 6vw; /* Adjust font size */
+        margin-bottom: 20px; /* Reduce margin */
+    }
+
+    .one h2 {
+        font-size: 5vw; /* Adjust font size */
+    }
+
+    /* Adjust the positioning of .one p */
+    .one p {
+        font-size: 2.5vh; /* Adjust font size */
+        padding: 20px; /* Adjust padding */
+        top: 70%; /* Adjust position */
+    }
+
+    /* Adjust the chart layout */
+    .chart {
+        padding: 2rem; /* Adjust padding */
+        flex-direction: column; /* Stack content */
+        gap: 2rem; /* Adjust gap */
+    }
+
+    .chart-info h3 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .chart-info p {
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
